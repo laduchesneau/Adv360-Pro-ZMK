@@ -127,22 +127,22 @@
         default_layer {
             display-name = "Base";
             bindings = <
-&none          &kp N1                &kp N2                   &kp N3                &kp N4                &kp N5                               &none                                                                         &none                  &kp N6                                 &kp N7                 &kp N8                  &kp N9                     &kp N0                        &none
-&kp GRAVE      &kp Q                 &kp W                    &kp E                 &kp R                 &kp T                                &none                                                                         &kp SCROLLLOCK         &kp Y                                  &kp U                  &kp I                   &kp O                      &kp P                         &kp EQUAL
-&kp ESC        &hrm_kp_left LALT A   &hrm_kp_left LEFT_GUI S  &hrm_kp_left LSHFT D  &hrm_kp_left LCTRL F  &hrm_kp_left LS(LA(LC(LEFT_GUI))) G  &none          &hrm_lt_left 2 LS(TAB)  &mo 1      &mo 3  &hrm_lt_right 2 TAB  &none                  &hrm_kp_right RS(RA(RC(RIGHT_GUI))) H  &hrm_kp_right LCTRL J  &hrm_kp_right RSHIFT K  &hrm_kp_right RIGHT_GUI L  &hrm_kp_right RALT SEMICOLON  &kp MINUS
-&kp BACKSLASH  &kp Z                 &kp X                    &kp C                 &kp V                 &kp B                                                                       &none      &none                                              &kp N                                  &kp M                  &kp COMMA               &kp DOT                    &kp SINGLE_QUOTE              &kp SLASH
-&kp LEFT_GUI   &kp LEFT_PARENTHESIS  &kp LEFT_BRACKET         &left_home            &down_page_down                                            &kp BACKSPACE  &kp DELETE              &mo 2      &mo 2  &kp ENTER            &hrm_lt_right 2 SPACE                                         &up_page_up            &right_end              &kp RIGHT_BRACKET          &kp RIGHT_PARENTHESIS         &kp RIGHT_SHIFT
+&none          &kp N1                &kp N2                   &kp N3                &kp N4                &kp N5                               &kp PAUSE_BREAK                                                                 &kp PRINTSCREEN  &kp N6                                 &kp N7                 &kp N8                  &kp N9                     &kp N0                        &none
+&kp GRAVE      &kp Q                 &kp W                    &kp E                 &kp R                 &kp T                                &none                                                                           &kp SCROLLLOCK   &kp Y                                  &kp U                  &kp I                   &kp O                      &kp P                         &kp EQUAL
+&kp ESC        &hrm_kp_left LALT A   &hrm_kp_left LEFT_GUI S  &hrm_kp_left LSHFT D  &hrm_kp_left LCTRL F  &hrm_kp_left LS(LA(LC(LEFT_GUI))) G  &kp INSERT       &hrm_lt_left 2 LS(TAB)  &mo 1      &mo 3  &hrm_lt_right 2 TAB  &kp INSERT       &hrm_kp_right RS(RA(RC(RIGHT_GUI))) H  &hrm_kp_right LCTRL J  &hrm_kp_right RSHIFT K  &hrm_kp_right RIGHT_GUI L  &hrm_kp_right RALT SEMICOLON  &kp MINUS
+&kp BACKSLASH  &kp Z                 &kp X                    &kp C                 &kp V                 &kp B                                                                         &none      &none                                        &kp N                                  &kp M                  &kp COMMA               &kp DOT                    &kp SINGLE_QUOTE              &kp SLASH
+&kp LEFT_GUI   &kp LEFT_PARENTHESIS  &kp LEFT_BRACKET         &left_home            &down_page_down                                            &kp BACKSPACE    &kp DELETE              &none      &none  &kp ENTER            &kp SPACE                                               &up_page_up            &right_end              &kp RIGHT_BRACKET          &kp RIGHT_PARENTHESIS         &kp RIGHT_SHIFT
             >;
         };
 
         keypad {
             display-name = "Kp";
             bindings = <
-&none  &none   &none  &none   &none   &none   &none                                       &none   &kp KP_NLCK               &kp KP_CLEAR      &kp KP_SLASH  &kp KP_MULTIPLY  &kp LS(KP_EQUAL)  &none
-&none  &none   &none  &trans  &none   &none   &none                                       &none   &kp CARET                 &kp KP_N7         &kp KP_N8     &kp KP_N9        &kp KP_MINUS      &none
-&none  &trans  &none  &trans  &trans  &none   &none   &trans  &trans      &trans  &trans  &none   &kp KP_LEFT_PARENTHESIS   &kp KP_N4         &kp KP_N5     &kp KP_N6        &kp KP_PLUS       &none
-&none  &none   &none  &trans  &none   &trans                  &trans      &trans                  &kp KP_RIGHT_PARENTHESIS  &kp KP_N1         &kp KP_N2     &kp KP_N3        &kp KP_ENTER      &none
-&none  &none   &none  &none   &none           &trans  &trans  &trans      &trans  &trans  &trans                            &kp LS(KP_COMMA)  &kp KP_N0     &kp KP_DOT       &kp BACKSPACE     &none
+&none  &none  &none  &none  &none  &none  &none                                       &none   &kp KP_NLCK               &kp KP_CLEAR      &kp KP_SLASH  &kp KP_MULTIPLY  &kp LS(KP_EQUAL)  &none
+&none  &none  &none  &none  &none  &none  &none                                       &none   &kp CARET                 &kp KP_N7         &kp KP_N8     &kp KP_N9        &kp KP_MINUS      &none
+&none  &none  &none  &none  &none  &none  &none   &trans  &trans      &trans  &trans  &none   &kp KP_LEFT_PARENTHESIS   &kp KP_N4         &kp KP_N5     &kp KP_N6        &kp KP_PLUS       &none
+&none  &none  &none  &none  &none  &none                  &none       &none                   &kp KP_RIGHT_PARENTHESIS  &kp KP_N1         &kp KP_N2     &kp KP_N3        &kp KP_ENTER      &none
+&none  &none  &none  &none  &none         &trans  &trans  &none       &none   &trans  &trans                            &kp LS(KP_COMMA)  &kp KP_N0     &kp KP_DOT       &kp BACKSPACE     &none
             >;
         };
 
